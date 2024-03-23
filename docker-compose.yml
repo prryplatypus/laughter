@@ -1,0 +1,13 @@
+version: '3'
+services:
+  bot:
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: laughter
+    stop_signal: SIGINT
+    volumes:
+      - ./:/app
+    restart: always

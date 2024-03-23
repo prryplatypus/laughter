@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "laughter"
+version = "0.1.0"
+description = "A bot that reacts with laughs randomly"
+authors = ["prryplatypus <25409753+prryplatypus@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+laughter = "laughter.__main__:run"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+discord = "^2.3.2"
+PyYAML = "^6.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
